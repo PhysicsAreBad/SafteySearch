@@ -1,0 +1,12 @@
+/Volumes/JACK/Visual_Studio_Projects/helloworld/helloworld/obj/x86/Debug/helloworld.csprojResolveAssemblyReference.cache
+/Volumes/JACK/Visual_Studio_Projects/helloworld/helloworld/obj/x86/Debug/helloworld.csproj.CoreCompileInputs.cache
+/Volumes/JACK/Visual_Studio_Projects/helloworld/helloworld/obj/x86/Debug/helloworld.exe
+/Volumes/JACK/Visual_Studio_Projects/helloworld/helloworld/obj/x86/Debug/helloworld.pdb
+/Users/bengonser/Desktop/Visual_Studio_Projects/helloworld/helloworld/bin/Debug/helloworld.exe
+/Users/bengonser/Desktop/Visual_Studio_Projects/helloworld/helloworld/bin/Debug/helloworld.pdb
+/Users/bengonser/Desktop/Visual_Studio_Projects/helloworld/helloworld/obj/x86/Debug/helloworld.csprojResolveAssemblyReference.cache
+/Users/bengonser/Desktop/Visual_Studio_Projects/helloworld/helloworld/obj/x86/Debug/helloworld.csproj.CoreCompileInputs.cache
+/Users/bengonser/Desktop/Visual_Studio_Projects/helloworld/helloworld/obj/x86/Debug/helloworld.exe
+/Users/bengonser/Desktop/Visual_Studio_Projects/helloworld/helloworld/obj/x86/Debug/helloworld.pdb
+/Users/bengonser/Desktop/Visual_Studio_Projects/helloworld/helloworld/bin/Debug/Simplify.Windows.Forms.dll
+/Users/bengonser/Desktop/Visual_Studio_Projects/helloworld/helloworld/bin/Debug/Simplify.Windows.Forms.xml
