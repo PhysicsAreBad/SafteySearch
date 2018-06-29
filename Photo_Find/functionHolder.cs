@@ -51,7 +51,7 @@ namespace functionHolder
 
             } else {
                 string findImageBy = ST + " stock photo";
-                bool isStockPhotoThere? =  input.Contains(findImageBy, System.StringComparison.CurrentCultureIgnoreCase);
+
             }
         }
     }

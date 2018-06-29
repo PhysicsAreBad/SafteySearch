@@ -36,7 +36,7 @@ namespace Photo_Find
             Console.WriteLine("Welcome to Safty Search! Version 0.3 Stable (Images are not sorted) Devolped by Jack Gonser");
             functionHolder.Functions.SearchPropmt();
             Console.OutputEncoding = System.Text.Encoding.UTF8;
-            searchTerm = functionHolder.Functions.ST;
+            searchTerm = functionHolder.Functions.ST + " stock photo";
             if (accessKey.Length == 32)
             {
                 Console.WriteLine("Searching images for: " + searchTerm);
@@ -48,7 +48,7 @@ namespace Photo_Find
                     Console.WriteLine(header.Key + ": " + header.Value);
 
                 Console.WriteLine("\nJSON Response:\n");
-                Console.WriteLine(JsonPrettyPrint(result.jsonResult));
+                Console.WriteLine(JsonPrettyPrint(result.jsonResult)); //JSON Parser function goes here
             }
             else
             {
