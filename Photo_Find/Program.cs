@@ -49,6 +49,13 @@ namespace Photo_Find
 
                 Console.WriteLine("\nJSON Response:\n");
                 Console.WriteLine(JsonPrettyPrint(result.jsonResult)); //JSON Parser function goes here
+
+                functionHolder.Functions.JSONParser2(result.jsonResult);
+
+                if (functionHolder.Functions.resultsnum >= 1) Console.WriteLine(functionHolder.Functions.result1);
+                if (functionHolder.Functions.resultsnum >= 2) Console.WriteLine(functionHolder.Functions.result2);
+                if (functionHolder.Functions.resultsnum >= 3) Console.WriteLine(functionHolder.Functions.result3);
+                if (functionHolder.Functions.resultsnum == 0) Console.WriteLine("No results, your safe from the stock photos! (To be more careful, close and reopen this app and try a related search term.)");
             }
             else
             {
@@ -131,7 +138,7 @@ namespace Photo_Find
                 else
                 {
                     switch (ch)
-                    {
+                    { 
                         case '{':
                         case '[':
                             sb.Append(ch);

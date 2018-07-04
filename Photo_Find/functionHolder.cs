@@ -47,8 +47,7 @@ namespace functionHolder
         public static void JSONParser2 (string input) {
             if (input == null)
             {
-                resultsnum = 999;
-
+                Console.WriteLine("Error while searching, hmm. ERROR_JSON_NULL");
             } else {
                 string findImageBy = ST + " stock photo";
 
