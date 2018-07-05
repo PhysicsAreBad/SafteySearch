@@ -52,18 +52,17 @@ namespace Photo_Find
 
                 functionHolder.Functions.JSONParser2(result.jsonResult);
 
-                if (functionHolder.Functions.resultsnum >= 1) Console.WriteLine(functionHolder.Functions.result1);
-                if (functionHolder.Functions.resultsnum >= 2) Console.WriteLine(functionHolder.Functions.result2);
-                if (functionHolder.Functions.resultsnum >= 3) Console.WriteLine(functionHolder.Functions.result3);
+                if (functionHolder.Functions.resultsnum >= 1) Console.WriteLine("Result #1 " + functionHolder.Functions.result1);
+                if (functionHolder.Functions.resultsnum >= 2) Console.WriteLine("Result #2 " + functionHolder.Functions.result2);
+                if (functionHolder.Functions.resultsnum >= 3) Console.WriteLine("Result #3 " + functionHolder.Functions.result3);
                 if (functionHolder.Functions.resultsnum == 0) Console.WriteLine("No results, your safe from the stock photos! (To be more careful, close and reopen this app and try a related search term.)");
             }
             else
             {
-                Console.WriteLine("Invalid Bing Search API subscription key!");
-                Console.WriteLine("Please paste yours into the source code.");
+                Console.WriteLine("An error occured! ERR_INVLD_KEY Please notify Jack Gonser about this error.");
             }
 
-            Console.Write("\nPress Enter to exit ");
+            Console.Write("\nPress Enter to close the program.");
             Console.ReadLine();
         }
 

@@ -47,9 +47,22 @@ namespace functionHolder
         public static void JSONParser2 (string input) {
             if (input == null)
             {
-                Console.WriteLine("Error while searching, hmm. ERROR_JSON_NULL");
+                Console.WriteLine("Error while searching, hmm. ERR_JSON_NULL");
             } else {
                 string findImageBy = ST + " stock photo";
+                if (input.IndexOf(findImageBy) != -1) {
+                  /*int i = 0;
+                    while ((i = input.IndexOf(findImageBy, i)) != -1)
+                    {
+                        // Print out the substring.
+                        Console.WriteLine(input.Substring(i));
+
+                        // Increment the index.
+                        i++;
+                    }
+                } else {
+                    resultsnum = 0;
+                } */
 
             }
         }
