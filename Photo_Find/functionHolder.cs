@@ -56,10 +56,10 @@ namespace functionHolder
             else
             {
                 string findImageBy = ST + " stock photo";
-                int startPos = input.LastIndexOf(findImageBy) + findImageBy.Length + 1;
+                int startPos = input.LastIndexOf(ST) + ST.Length + 1;
                 int length = input.IndexOf("width") - startPos;
                 string sub = input.Substring(startPos, length);
-                Console.WriteLine(sub);
+                result1 
             }
         }
     }
