@@ -10,10 +10,73 @@
             </summary>
         </member>
         <member name="M:Microsoft.Azure.Search.DataSourcesOperations.CreateOrUpdateWithHttpMessagesAsync(Microsoft.Azure.Search.Models.DataSource,Microsoft.Azure.Search.Models.SearchRequestOptions,Microsoft.Azure.Search.Models.AccessCondition,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
-            <inheritdoc />
+            <summary>
+            Creates a new Azure Search datasource or updates a datasource if it already
+            exists.
+            <see href="https://docs.microsoft.com/rest/api/searchservice/Update-Data-Source" />
+            </summary>
+            <param name='dataSource'>
+            The definition of the datasource to create or update.
+            </param>
+            <param name='searchRequestOptions'>
+            Additional parameters for the operation.
+            </param>
+            <param name='accessCondition'>
+            Additional parameters for the operation.
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code.
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response.
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null.
+            </exception>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null.
+            </exception>
+            <returns>
+            A response object containing the response body and response headers.
+            </returns>
         </member>
         <member name="M:Microsoft.Azure.Search.DataSourcesOperations.ExistsWithHttpMessagesAsync(System.String,Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
-            <inheritdoc />
+            <summary>
+            Determines whether or not the given data source exists in the Azure Search service.
+            </summary>
+            <param name="dataSourceName">
+            The name of the data source.
+            </param>
+            <param name='searchRequestOptions'>
+            Additional parameters for the operation
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code.
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response.
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null.
+            </exception>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null.
+            </exception>
+            <returns>
+            A response with the value <c>true</c> if the data source exists; <c>false</c> otherwise.
+            </returns>
         </member>
         <member name="M:Microsoft.Azure.Search.DataSourcesOperations.#ctor(Microsoft.Azure.Search.SearchServiceClient)">
             <summary>
@@ -211,8 +274,9 @@
         </member>
         <member name="M:Microsoft.Azure.Search.DataSourcesOperationsExtensions.CreateOrUpdate(Microsoft.Azure.Search.IDataSourcesOperations,Microsoft.Azure.Search.Models.DataSource,Microsoft.Azure.Search.Models.SearchRequestOptions,Microsoft.Azure.Search.Models.AccessCondition)">
             <summary>
-            Creates a new Azure Search datasource or updates a datasource if it
-            already exists.
+            Creates a new Azure Search datasource or updates a datasource if it already
+            exists.
+            <see href="https://docs.microsoft.com/rest/api/searchservice/Update-Data-Source" />
             </summary>
             <param name='operations'>
             The operations group for this extension method.
@@ -221,16 +285,20 @@
             The definition of the datasource to create or update.
             </param>
             <param name='searchRequestOptions'>
-            Additional parameters for the operation
+            Additional parameters for the operation.
             </param>
             <param name='accessCondition'>
-            Additional parameters for the operation
+            Additional parameters for the operation.
             </param>
+            <returns>
+            The datasource that was created or updated.
+            </returns>
         </member>
         <member name="M:Microsoft.Azure.Search.DataSourcesOperationsExtensions.CreateOrUpdateAsync(Microsoft.Azure.Search.IDataSourcesOperations,Microsoft.Azure.Search.Models.DataSource,Microsoft.Azure.Search.Models.SearchRequestOptions,Microsoft.Azure.Search.Models.AccessCondition,System.Threading.CancellationToken)">
             <summary>
-            Creates a new Azure Search datasource or updates a datasource if it
-            already exists.
+            Creates a new Azure Search datasource or updates a datasource if it already
+            exists.
+            <see href="https://docs.microsoft.com/rest/api/searchservice/Update-Data-Source" />
             </summary>
             <param name='operations'>
             The operations group for this extension method.
@@ -247,6 +315,9 @@
             <param name='cancellationToken'>
             The cancellation token.
             </param>
+            <returns>
+            The datasource that was created or updated.
+            </returns>
         </member>
         <member name="M:Microsoft.Azure.Search.DataSourcesOperationsExtensions.Exists(Microsoft.Azure.Search.IDataSourcesOperations,System.String,Microsoft.Azure.Search.Models.SearchRequestOptions)">
             <summary>
@@ -259,7 +330,7 @@
             The name of the data source.
             </param>
             <param name='searchRequestOptions'>
-            Additional parameters for the operation
+            Additional parameters for the operation.
             </param>
             <returns>
             <c>true</c> if the data source exists; <c>false</c> otherwise.
@@ -276,7 +347,7 @@
             The name of the data source.
             </param>
             <param name='searchRequestOptions'>
-            Additional parameters for the operation
+            Additional parameters for the operation.
             </param>
             <param name='cancellationToken'>
             The cancellation token.
@@ -471,24 +542,40 @@
         </member>
         <member name="M:Microsoft.Azure.Search.IDataSourcesOperations.CreateOrUpdateWithHttpMessagesAsync(Microsoft.Azure.Search.Models.DataSource,Microsoft.Azure.Search.Models.SearchRequestOptions,Microsoft.Azure.Search.Models.AccessCondition,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
             <summary>
-            Creates a new Azure Search datasource or updates a datasource if
-            it already exists.
+            Creates a new Azure Search datasource or updates a datasource if it already
+            exists.
+            <see href="https://docs.microsoft.com/rest/api/searchservice/Update-Data-Source" />
             </summary>
             <param name='dataSource'>
             The definition of the datasource to create or update.
             </param>
             <param name='searchRequestOptions'>
-            Additional parameters for the operation
+            Additional parameters for the operation.
             </param>
             <param name='accessCondition'>
-            Additional parameters for the operation
+            Additional parameters for the operation.
             </param>
             <param name='customHeaders'>
-            The headers that will be added to request.
+            Headers that will be added to request.
             </param>
             <param name='cancellationToken'>
             The cancellation token.
             </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code.
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response.
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null.
+            </exception>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null.
+            </exception>
+            <returns>
+            A response object containing the response body and response headers.
+            </returns>
         </member>
         <member name="M:Microsoft.Azure.Search.IDataSourcesOperations.ExistsWithHttpMessagesAsync(System.String,Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
             <summary>
@@ -498,7 +585,7 @@
             The name of the data source.
             </param>
             <param name='searchRequestOptions'>
-            Additional parameters for the operation
+            Additional parameters for the operation.
             </param>
             <param name='customHeaders'>
             The headers that will be added to request.
@@ -506,6 +593,18 @@
             <param name='cancellationToken'>
             The cancellation token.
             </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code.
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response.
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null.
+            </exception>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null.
+            </exception>
             <returns>
             A response with the value <c>true</c> if the data source exists; <c>false</c> otherwise.
             </returns>
@@ -7168,8 +7267,9 @@
         </member>
         <member name="M:Microsoft.Azure.Search.IIndexersOperations.CreateOrUpdateWithHttpMessagesAsync(Microsoft.Azure.Search.Models.Indexer,Microsoft.Azure.Search.Models.SearchRequestOptions,Microsoft.Azure.Search.Models.AccessCondition,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
             <summary>
-            Creates a new Azure Search indexer or updates an indexer if it
-            already exists.
+            Creates a new Azure Search indexer or updates an indexer if it already
+            exists.
+            <see href="https://docs.microsoft.com/rest/api/searchservice/Create-Indexer" />
             </summary>
             <param name='indexer'>
             The definition of the indexer to create or update.
@@ -7181,11 +7281,26 @@
             Additional parameters for the operation
             </param>
             <param name='customHeaders'>
-            The headers that will be added to request.
+            Headers that will be added to request.
             </param>
             <param name='cancellationToken'>
             The cancellation token.
             </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code.
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response.
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null.
+            </exception>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null.
+            </exception>
+            <returns>
+            A response object containing the response body and response headers.
+            </returns>
         </member>
         <member name="M:Microsoft.Azure.Search.IIndexersOperations.ExistsWithHttpMessagesAsync(System.String,Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
             <summary>
@@ -7195,7 +7310,7 @@
             The name of the indexer.
             </param>
             <param name='searchRequestOptions'>
-            Additional parameters for the operation
+            Additional parameters for the operation.
             </param>
             <param name='customHeaders'>
             The headers that will be added to request.
@@ -7203,6 +7318,18 @@
             <param name='cancellationToken'>
             The cancellation token.
             </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code.
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response.
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null.
+            </exception>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null.
+            </exception>
             <returns>
             A response with the value <c>true</c> if the indexer exists; <c>false</c> otherwise.
             </returns>
@@ -7428,10 +7555,73 @@
             </summary>
         </member>
         <member name="M:Microsoft.Azure.Search.IndexersOperations.CreateOrUpdateWithHttpMessagesAsync(Microsoft.Azure.Search.Models.Indexer,Microsoft.Azure.Search.Models.SearchRequestOptions,Microsoft.Azure.Search.Models.AccessCondition,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
-            <inheritdoc />
+            <summary>
+            Creates a new Azure Search indexer or updates an indexer if it already
+            exists.
+            <see href="https://docs.microsoft.com/rest/api/searchservice/Create-Indexer" />
+            </summary>
+            <param name='indexer'>
+            The definition of the indexer to create or update.
+            </param>
+            <param name='searchRequestOptions'>
+            Additional parameters for the operation.
+            </param>
+            <param name='accessCondition'>
+            Additional parameters for the operation.
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code.
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response.
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null.
+            </exception>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null.
+            </exception>
+            <returns>
+            A response object containing the response body and response headers.
+            </returns>
         </member>
         <member name="M:Microsoft.Azure.Search.IndexersOperations.ExistsWithHttpMessagesAsync(System.String,Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
-            <inheritdoc />
+            <summary>
+            Determines whether or not the given indexer exists in the Azure Search service.
+            </summary>
+            <param name="indexerName">
+            The name of the indexer.
+            </param>
+            <param name='searchRequestOptions'>
+            Additional parameters for the operation.
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code.
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response.
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null.
+            </exception>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null.
+            </exception>
+            <returns>
+            A response with the value <c>true</c> if the indexer exists; <c>false</c> otherwise.
+            </returns>
         </member>
         <member name="M:Microsoft.Azure.Search.IndexersOperations.#ctor(Microsoft.Azure.Search.SearchServiceClient)">
             <summary>
@@ -7724,6 +7914,7 @@
             <summary>
             Creates a new Azure Search indexer or updates an indexer if it already
             exists.
+            <see href="https://docs.microsoft.com/rest/api/searchservice/Create-Indexer" />
             </summary>
             <param name='operations'>
             The operations group for this extension method.
@@ -7732,16 +7923,20 @@
             The definition of the indexer to create or update.
             </param>
             <param name='searchRequestOptions'>
-            Additional parameters for the operation
+            Additional parameters for the operation.
             </param>
             <param name='accessCondition'>
-            Additional parameters for the operation
+            Additional parameters for the operation.
             </param>
+            <returns>
+            The indexer that was created or updated.
+            </returns>
         </member>
         <member name="M:Microsoft.Azure.Search.IndexersOperationsExtensions.CreateOrUpdateAsync(Microsoft.Azure.Search.IIndexersOperations,Microsoft.Azure.Search.Models.Indexer,Microsoft.Azure.Search.Models.SearchRequestOptions,Microsoft.Azure.Search.Models.AccessCondition,System.Threading.CancellationToken)">
             <summary>
             Creates a new Azure Search indexer or updates an indexer if it already
             exists.
+            <see href="https://docs.microsoft.com/rest/api/searchservice/Create-Indexer" />
             </summary>
             <param name='operations'>
             The operations group for this extension method.
@@ -7750,14 +7945,17 @@
             The definition of the indexer to create or update.
             </param>
             <param name='searchRequestOptions'>
-            Additional parameters for the operation
+            Additional parameters for the operation.
             </param>
             <param name='accessCondition'>
-            Additional parameters for the operation
+            Additional parameters for the operation.
             </param>
             <param name='cancellationToken'>
             The cancellation token.
             </param>
+            <returns>
+            The indexer that was created or updated.
+            </returns>
         </member>
         <member name="M:Microsoft.Azure.Search.IndexersOperationsExtensions.Exists(Microsoft.Azure.Search.IIndexersOperations,System.String,Microsoft.Azure.Search.Models.SearchRequestOptions)">
             <summary>
@@ -7770,7 +7968,7 @@
             The name of the indexer.
             </param>
             <param name='searchRequestOptions'>
-            Additional parameters for the operation
+            Additional parameters for the operation.
             </param>
             <returns>
             <c>true</c> if the indexer exists; <c>false</c> otherwise.
@@ -7787,7 +7985,7 @@
             The name of the indexer.
             </param>
             <param name='searchRequestOptions'>
-            Additional parameters for the operation
+            Additional parameters for the operation.
             </param>
             <param name='cancellationToken'>
             The cancellation token.
@@ -8194,32 +8392,46 @@
         </member>
         <member name="M:Microsoft.Azure.Search.IIndexesOperations.CreateOrUpdateWithHttpMessagesAsync(Microsoft.Azure.Search.Models.Index,System.Nullable{System.Boolean},Microsoft.Azure.Search.Models.SearchRequestOptions,Microsoft.Azure.Search.Models.AccessCondition,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
             <summary>
-            Creates a new Azure Search index or updates an index if it already
-            exists.
+            Creates a new Azure Search index or updates an index if it already exists.
+            <see href="https://docs.microsoft.com/rest/api/searchservice/Update-Index" />
             </summary>
             <param name='index'>
             The definition of the index to create or update.
             </param>
             <param name='allowIndexDowntime'>
-            Allows new analyzers, tokenizers, token filters, or char filters
-            to be added to an index by taking the index offline for at least
-            a few seconds. This temporarily causes indexing and query
-            requests to fail. Performance and write availability of the index
-            can be impaired for several minutes after the index is updated,
-            or longer for very large indexes.
+            Allows new analyzers, tokenizers, token filters, or char filters to be
+            added to an index by taking the index offline for at least a few seconds.
+            This temporarily causes indexing and query requests to fail. Performance
+            and write availability of the index can be impaired for several minutes
+            after the index is updated, or longer for very large indexes.
             </param>
             <param name='searchRequestOptions'>
-            Additional parameters for the operation
+            Additional parameters for the operation.
             </param>
             <param name='accessCondition'>
-            Additional parameters for the operation
+            Additional parameters for the operation.
             </param>
             <param name='customHeaders'>
-            The headers that will be added to request.
+            Headers that will be added to request.
             </param>
             <param name='cancellationToken'>
             The cancellation token.
             </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code.
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response.
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null.
+            </exception>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+            <returns>
+            A response object containing the response body and response headers.
+            </returns>
         </member>
         <member name="M:Microsoft.Azure.Search.IIndexesOperations.ExistsWithHttpMessagesAsync(System.String,Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
             <summary>
@@ -8229,7 +8441,7 @@
             The name of the index.
             </param>
             <param name='searchRequestOptions'>
-            Additional parameters for the operation
+            Additional parameters for the operation.
             </param>
             <param name='customHeaders'>
             The headers that will be added to request.
@@ -8237,6 +8449,18 @@
             <param name='cancellationToken'>
             The cancellation token.
             </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code.
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response.
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null.
+            </exception>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null.
+            </exception>
             <returns>
             A response with the value <c>true</c> if the index exists; <c>false</c> otherwise.
             </returns>
@@ -8457,10 +8681,79 @@
             </summary>
         </member>
         <member name="M:Microsoft.Azure.Search.IndexesOperations.CreateOrUpdateWithHttpMessagesAsync(Microsoft.Azure.Search.Models.Index,System.Nullable{System.Boolean},Microsoft.Azure.Search.Models.SearchRequestOptions,Microsoft.Azure.Search.Models.AccessCondition,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
-            <inheritdoc />
+            <summary>
+            Creates a new Azure Search index or updates an index if it already exists.
+            <see href="https://docs.microsoft.com/rest/api/searchservice/Update-Index" />
+            </summary>
+            <param name='index'>
+            The definition of the index to create or update.
+            </param>
+            <param name='allowIndexDowntime'>
+            Allows new analyzers, tokenizers, token filters, or char filters to be
+            added to an index by taking the index offline for at least a few seconds.
+            This temporarily causes indexing and query requests to fail. Performance
+            and write availability of the index can be impaired for several minutes
+            after the index is updated, or longer for very large indexes.
+            </param>
+            <param name='searchRequestOptions'>
+            Additional parameters for the operation.
+            </param>
+            <param name='accessCondition'>
+            Additional parameters for the operation.
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code.
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response.
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null.
+            </exception>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+            <returns>
+            A response object containing the response body and response headers.
+            </returns>
         </member>
         <member name="M:Microsoft.Azure.Search.IndexesOperations.ExistsWithHttpMessagesAsync(System.String,Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
-            <inheritdoc />
+            <summary>
+            Determines whether or not the given index exists in the Azure Search service.
+            </summary>
+            <param name="indexName">
+            The name of the index.
+            </param>
+            <param name='searchRequestOptions'>
+            Additional parameters for the operation.
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code.
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response.
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null.
+            </exception>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+            <returns>
+            A response with the value <c>true</c> if the index exists; <c>false</c> otherwise.
+            </returns>
         </member>
         <member name="M:Microsoft.Azure.Search.IndexesOperations.#ctor(Microsoft.Azure.Search.SearchServiceClient)">
             <summary>
@@ -8740,6 +9033,7 @@
         <member name="M:Microsoft.Azure.Search.IndexesOperationsExtensions.CreateOrUpdate(Microsoft.Azure.Search.IIndexesOperations,Microsoft.Azure.Search.Models.Index,System.Nullable{System.Boolean},Microsoft.Azure.Search.Models.SearchRequestOptions,Microsoft.Azure.Search.Models.AccessCondition)">
             <summary>
             Creates a new Azure Search index or updates an index if it already exists.
+            <see href="https://docs.microsoft.com/rest/api/searchservice/Update-Index" />
             </summary>
             <param name='operations'>
             The operations group for this extension method.
@@ -8756,15 +9050,19 @@
             or longer for very large indexes.
             </param>
             <param name='searchRequestOptions'>
-            Additional parameters for the operation
+            Additional parameters for the operation.
             </param>
             <param name='accessCondition'>
-            Additional parameters for the operation
+            Additional parameters for the operation.
             </param>
+            <returns>
+            The index that was created or updated.
+            </returns>
         </member>
         <member name="M:Microsoft.Azure.Search.IndexesOperationsExtensions.CreateOrUpdateAsync(Microsoft.Azure.Search.IIndexesOperations,Microsoft.Azure.Search.Models.Index,System.Nullable{System.Boolean},Microsoft.Azure.Search.Models.SearchRequestOptions,Microsoft.Azure.Search.Models.AccessCondition,System.Threading.CancellationToken)">
             <summary>
             Creates a new Azure Search index or updates an index if it already exists.
+            <see href="https://docs.microsoft.com/rest/api/searchservice/Update-Index" />
             </summary>
             <param name='operations'>
             The operations group for this extension method.
@@ -8781,14 +9079,17 @@
             or longer for very large indexes.
             </param>
             <param name='searchRequestOptions'>
-            Additional parameters for the operation
+            Additional parameters for the operation.
             </param>
             <param name='accessCondition'>
-            Additional parameters for the operation
+            Additional parameters for the operation.
             </param>
             <param name='cancellationToken'>
             The cancellation token.
             </param>
+            <returns>
+            The index that was created or updated.
+            </returns>
         </member>
         <member name="M:Microsoft.Azure.Search.IndexesOperationsExtensions.Exists(Microsoft.Azure.Search.IIndexesOperations,System.String,Microsoft.Azure.Search.Models.SearchRequestOptions)">
             <summary>
@@ -8801,7 +9102,7 @@
             The name of the index.
             </param>
             <param name='searchRequestOptions'>
-            Additional parameters for the operation
+            Additional parameters for the operation.
             </param>
             <returns>
             <c>true</c> if the index exists; <c>false</c> otherwise.
@@ -8818,7 +9119,7 @@
             The name of the index.
             </param>
             <param name='searchRequestOptions'>
-            Additional parameters for the operation
+            Additional parameters for the operation.
             </param>
             <param name='cancellationToken'>
             The cancellation token.
@@ -8839,7 +9140,7 @@
             The operations group for this extension method.
             </param>
             <param name='searchRequestOptions'>
-            Additional parameters for the operation
+            Additional parameters for the operation.
             </param>
             <returns>
             The list of all index names for the search service.
@@ -8857,7 +9158,7 @@
             The operations group for this extension method.
             </param>
             <param name='searchRequestOptions'>
-            Additional parameters for the operation
+            Additional parameters for the operation.
             </param>
             <param name='cancellationToken'>
             The cancellation token.
@@ -9149,8 +9450,11 @@
         </member>
         <member name="P:Microsoft.Azure.Search.ISearchServiceClient.SearchCredentials">
             <summary>
-            Gets the credentials used to authenticate to an Azure Search service.
+            Gets the credentials used to authenticate to an Azure Search service. This can be either a query API key or an admin API key.
             </summary>
+            <remarks>
+            See <see href="https://docs.microsoft.com/azure/search/search-security-api-keys"/> for more information about API keys in Azure Search.
+            </remarks>
         </member>
         <member name="P:Microsoft.Azure.Search.ISearchServiceClient.SerializationSettings">
             <summary>
@@ -9269,7 +9573,12 @@
             </param>
         </member>
         <member name="P:Microsoft.Azure.Search.SearchServiceClient.SearchCredentials">
-            <inheritdoc />
+            <summary>
+            Gets the credentials used to authenticate to an Azure Search service. This can be either a query API key or an admin API key.
+            </summary>
+            <remarks>
+            See <see href="https://docs.microsoft.com/azure/search/search-security-api-keys"/> for more information about API keys in Azure Search.
+            </remarks>
         </member>
         <member name="P:Microsoft.Azure.Search.SearchServiceClient.BaseUri">
             <summary>
@@ -9435,24 +9744,40 @@
         </member>
         <member name="M:Microsoft.Azure.Search.ISynonymMapsOperations.CreateOrUpdateWithHttpMessagesAsync(Microsoft.Azure.Search.Models.SynonymMap,Microsoft.Azure.Search.Models.SearchRequestOptions,Microsoft.Azure.Search.Models.AccessCondition,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
             <summary>
-            Creates a new Azure Search synonymmap or updates a synonymmap if
-            it already exists.
+            Creates a new Azure Search synonym map or updates a synonym map if it
+            already exists.
+            <see href="https://docs.microsoft.com/rest/api/searchservice/Update-Synonym-Map" />
             </summary>
             <param name='synonymMap'>
-            The definition of the synonymmap to create or update.
+            The definition of the synonym map to create or update.
             </param>
             <param name='searchRequestOptions'>
-            Additional parameters for the operation
+            Additional parameters for the operation.
             </param>
             <param name='accessCondition'>
-            Additional parameters for the operation
+            Additional parameters for the operation.
             </param>
             <param name='customHeaders'>
-            The headers that will be added to request.
+            Headers that will be added to request.
             </param>
             <param name='cancellationToken'>
             The cancellation token.
             </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code.
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response.
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null.
+            </exception>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null.
+            </exception>
+            <returns>
+            A response object containing the response body and response headers.
+            </returns>
         </member>
         <member name="M:Microsoft.Azure.Search.ISynonymMapsOperations.ExistsWithHttpMessagesAsync(System.String,Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
             <summary>
@@ -9462,7 +9787,7 @@
             The name of the synonym map.
             </param>
             <param name='searchRequestOptions'>
-            Additional parameters for the operation
+            Additional parameters for the operation.
             </param>
             <param name='customHeaders'>
             The headers that will be added to request.
@@ -9470,6 +9795,18 @@
             <param name='cancellationToken'>
             The cancellation token.
             </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code.
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response.
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null.
+            </exception>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null.
+            </exception>
             <returns>
             A response with the value <c>true</c> if the synonym map exists; <c>false</c> otherwise.
             </returns>
@@ -9619,10 +9956,73 @@
             </summary>
         </member>
         <member name="M:Microsoft.Azure.Search.SynonymMapsOperations.CreateOrUpdateWithHttpMessagesAsync(Microsoft.Azure.Search.Models.SynonymMap,Microsoft.Azure.Search.Models.SearchRequestOptions,Microsoft.Azure.Search.Models.AccessCondition,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
-            <inheritdoc />
+            <summary>
+            Creates a new Azure Search synonym map or updates a synonym map if it
+            already exists.
+            <see href="https://docs.microsoft.com/rest/api/searchservice/Update-Synonym-Map" />
+            </summary>
+            <param name='synonymMap'>
+            The definition of the synonym map to create or update.
+            </param>
+            <param name='searchRequestOptions'>
+            Additional parameters for the operation.
+            </param>
+            <param name='accessCondition'>
+            Additional parameters for the operation.
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code.
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response.
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null.
+            </exception>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null.
+            </exception>
+            <returns>
+            A response object containing the response body and response headers.
+            </returns>
         </member>
         <member name="M:Microsoft.Azure.Search.SynonymMapsOperations.ExistsWithHttpMessagesAsync(System.String,Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
-            <inheritdoc />
+            <summary>
+            Determines whether or not the given synonym map exists in the Azure Search service.
+            </summary>
+            <param name="synonymMapName">
+            The name of the synonym map.
+            </param>
+            <param name='searchRequestOptions'>
+            Additional parameters for the operation
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            Thrown when the operation returned an invalid status code.
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response.
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null.
+            </exception>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null.
+            </exception>
+            <returns>
+            A response with the value <c>true</c> if the synonym map exists; <c>false</c> otherwise.
+            </returns>
         </member>
         <member name="M:Microsoft.Azure.Search.SynonymMapsOperations.#ctor(Microsoft.Azure.Search.SearchServiceClient)">
             <summary>
@@ -9819,8 +10219,9 @@
         </member>
         <member name="M:Microsoft.Azure.Search.SynonymMapsOperationsExtensions.CreateOrUpdate(Microsoft.Azure.Search.ISynonymMapsOperations,Microsoft.Azure.Search.Models.SynonymMap,Microsoft.Azure.Search.Models.SearchRequestOptions,Microsoft.Azure.Search.Models.AccessCondition)">
             <summary>
-            Creates a new Azure Search synonymmap or updates a synonymmap if it
+            Creates a new Azure Search synonym map or updates a synonym map if it
             already exists.
+            <see href="https://docs.microsoft.com/rest/api/searchservice/Update-Synonym-Map" />
             </summary>
             <param name='operations'>
             The operations group for this extension method.
@@ -9829,16 +10230,18 @@
             The definition of the synonymmap to create or update.
             </param>
             <param name='searchRequestOptions'>
-            Additional parameters for the operation
+            Additional parameters for the operation.
             </param>
             <param name='accessCondition'>
-            Additional parameters for the operation
+            Additional parameters for the operation.
             </param>
+            <returns>The synonym map that was created or updated.</returns>
         </member>
         <member name="M:Microsoft.Azure.Search.SynonymMapsOperationsExtensions.CreateOrUpdateAsync(Microsoft.Azure.Search.ISynonymMapsOperations,Microsoft.Azure.Search.Models.SynonymMap,Microsoft.Azure.Search.Models.SearchRequestOptions,Microsoft.Azure.Search.Models.AccessCondition,System.Threading.CancellationToken)">
             <summary>
-            Creates a new Azure Search synonymmap or updates a synonymmap if it
+            Creates a new Azure Search synonym map or updates a synonym map if it
             already exists.
+            <see href="https://docs.microsoft.com/rest/api/searchservice/Update-Synonym-Map" />
             </summary>
             <param name='operations'>
             The operations group for this extension method.
@@ -9847,14 +10250,15 @@
             The definition of the synonymmap to create or update.
             </param>
             <param name='searchRequestOptions'>
-            Additional parameters for the operation
+            Additional parameters for the operation.
             </param>
             <param name='accessCondition'>
-            Additional parameters for the operation
+            Additional parameters for the operation.
             </param>
             <param name='cancellationToken'>
             The cancellation token.
             </param>
+            <returns>The synonym map that was created or updated.</returns>
         </member>
         <member name="M:Microsoft.Azure.Search.SynonymMapsOperationsExtensions.Exists(Microsoft.Azure.Search.ISynonymMapsOperations,System.String,Microsoft.Azure.Search.Models.SearchRequestOptions)">
             <summary>
@@ -9867,7 +10271,7 @@
             The name of the synonym map.
             </param>
             <param name='searchRequestOptions'>
-            Additional parameters for the operation
+            Additional parameters for the operation.
             </param>
             <returns>
             <c>true</c> if the synonym map exists; <c>false</c> otherwise.
@@ -9884,7 +10288,7 @@
             The name of the synonym map.
             </param>
             <param name='searchRequestOptions'>
-            Additional parameters for the operation
+            Additional parameters for the operation.
             </param>
             <param name='cancellationToken'>
             The cancellation token.

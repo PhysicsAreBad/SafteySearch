@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 namespace functionHolder
 {
     public class Functions
@@ -44,26 +46,20 @@ namespace functionHolder
                 }
             }
         }
-        public static void JSONParser2 (string input) {
+        public static void JSONParser2(string input)
+        {
+            Console.WriteLine(input);
             if (input == null)
             {
                 Console.WriteLine("Error while searching, hmm. ERR_JSON_NULL");
-            } else {
+            }
+            else
+            {
                 string findImageBy = ST + " stock photo";
-                if (input.IndexOf(findImageBy) != -1) {
-                  /*int i = 0;
-                    while ((i = input.IndexOf(findImageBy, i)) != -1)
-                    {
-                        // Print out the substring.
-                        Console.WriteLine(input.Substring(i));
-
-                        // Increment the index.
-                        i++;
-                    }
-                } else {
-                    resultsnum = 0;
-                } */
-
+                int startPos = input.LastIndexOf(findImageBy) + findImageBy.Length + 1;
+                int length = input.IndexOf("width") - startPos;
+                string sub = input.Substring(startPos, length);
+                Console.WriteLine(sub);
             }
         }
     }

@@ -124,13 +124,20 @@
             Compares the ExtensibleEnum for equality with another ExtensibleEnum.
             </summary>
             <param name="other">The ExtensibleEnum with which to compare.</param>
-            <returns>true if the ExtensibleEnum objects are equal; false otherwise.</returns>
+            <returns><c>true</c> if the ExtensibleEnum objects are equal; otherwise, <c>false</c>.</returns>
         </member>
         <member name="M:Microsoft.Azure.Search.Models.ExtensibleEnum`1.Equals(System.Object)">
-            <inheritdoc />
+            <summary>
+            Determines whether the specified object is equal to the current object.
+            </summary>
+            <param name="obj">The object to compare with the current object.</param>
+            <returns><c>true</c> if the specified object is equal to the current object; otherwise, <c>false</c>.</returns>
         </member>
         <member name="M:Microsoft.Azure.Search.Models.ExtensibleEnum`1.GetHashCode">
-            <inheritdoc />
+            <summary>
+            Serves as the default hash function.
+            </summary>
+            <returns>A hash code for the current object.</returns>
         </member>
         <member name="M:Microsoft.Azure.Search.Models.ExtensibleEnum`1.ToString">
             <summary>
@@ -185,6 +192,9 @@
             Credentials used to authenticate to an Azure Search service.
             <see href="https://docs.microsoft.com/rest/api/searchservice/"/>
             </summary>
+            <remarks>
+            See <see href="https://docs.microsoft.com/azure/search/search-security-api-keys"/> for more information about API keys in Azure Search.
+            </remarks>
         </member>
         <member name="M:Microsoft.Azure.Search.SearchCredentials.#ctor(System.String)">
             <summary>

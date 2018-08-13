@@ -48,8 +48,6 @@ namespace Photo_Find
                     Console.WriteLine(header.Key + ": " + header.Value);
 
                 Console.WriteLine("\nJSON Response:\n");
-                Console.WriteLine(JsonPrettyPrint(result.jsonResult)); //JSON Parser function goes here
-
                 functionHolder.Functions.JSONParser2(result.jsonResult);
 
                 if (functionHolder.Functions.resultsnum >= 1) Console.WriteLine("Result #1 " + functionHolder.Functions.result1);
