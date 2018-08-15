@@ -7,9 +7,6 @@ namespace functionHolder
     {
         public static string ST; //Search term asked in terminal
         public static int resultsnum; //Number of matches found (maxium of three results displayed currently)
-        public static string result1; //The first result found if a result is found
-        public static string result2;
-        public static string result3;
         // <summary>
         // A function to ask what the user would like to search.
         // </summary>
@@ -17,7 +14,7 @@ namespace functionHolder
         {
             string check; // Variable to see if the user wants to start search process
             bool readySearch = false;
-            int i = 0; // loading while loop variable 
+            int i = 0; // loading while loop variable
 
             while (!readySearch)
             {
@@ -56,10 +53,14 @@ namespace functionHolder
             else
             {
                 string findImageBy = ST + " stock photo";
-                int startPos = input.LastIndexOf(ST) + ST.Length + 1;
-                int length = input.IndexOf("width") - startPos;
-                string sub = input.Substring(startPos, length);
-                result1 
+                int j = 0; 
+                // clearning the screen from the JSON File Dump
+                while (j < 100) {
+                    Console.WriteLine("                                     ");
+                    j++;
+                }
+                Console.WriteLine("Result #1:" + input.Substring(291, 300)); // First Return
+                Console.WriteLine("Result #2:" + input.Substring(4276, 300)); // Fifth Return (second to fourth returns have been found to be not related)
             }
         }
     }
